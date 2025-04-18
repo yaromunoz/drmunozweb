@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Yaromin Muñoz - Urología de Precisión</title>
+  <style>
+    body { margin:0; font-family:'Segoe UI',sans-serif; background:#f9f9f9; color:#1e1e1e; scroll-behavior:smooth; }
+    header { background:#1e3a5f; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000; }
+    header img.logo { height:150px; border-radius:20px; mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%); -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%); }
+    nav { display:flex; gap:0.5rem; background:rgba(255,255,255,0.1); padding:0.5rem 1rem; border-radius:8px; }
+    nav a { position:relative; color:white; text-decoration:none; font-weight:600; padding:0.5rem 1rem; border-radius:4px; transition:background 0.3s, color 0.3s; }
+    nav a:hover { background:rgba(255,255,255,0.2); color:#b87333; }
+    nav a + a::before { content:""; position:absolute; left:0; top:50%; transform:translateY(-50%); width:2px; height:1.2rem; background:#b87333; }
+    .hero { background:linear-gradient(135deg,#edf1f5 0%,#d6dbe3 100%); display:flex; align-items:center; justify-content:space-between; padding:4rem 2rem; flex-wrap:wrap; }
+    .hero-text h1 { margin:0; font-size:3rem; color:#b87333; }
+    .hero-text p { font-size:1.2rem; margin-top:1rem; color:#4a5b4e; }
+    .hero img { width:300px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.2); }
+    section { padding:3rem 2rem; max-width:1000px; margin:auto; }
+    h2 { font-size:2rem; color:#1e3a5f; border-left:6px solid #b87333; padding-left:1rem; margin-bottom:1rem; }
+    .procedures ul { list-style:none; padding:0; }
+    .procedures li { margin-bottom:0.75rem; padding-left:1.2rem; position:relative; }
+    .procedures li::before { content:'✔'; position:absolute; left:0; color:#b87333; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; }
+    .gallery img { width:100%; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.15); transition:transform 0.3s; }
+    .gallery img:hover { transform:scale(1.05); }
+    .logos { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:1.5rem; justify-items:center; align-items:center; }
+    .logos img { max-height:80px; filter:grayscale(100%); transition:filter 0.3s, transform 0.3s; }
+    .logos img:hover { filter:grayscale(0); transform:scale(1.05); }
+    .contact-info p { margin:0.5rem 0; }
+    .map-container { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem; }
+    .map-container iframe { width:100%; height:300px; border:none; border-radius:8px; }
+    .social a { margin-right:1rem; display:inline-block; }
+    .social img { width:32px; vertical-align:middle; transition:opacity 0.3s; }
+    .social img:hover { opacity:0.7; }
+    .whatsapp a { background:#25d366; color:white; text-decoration:none; padding:0.8rem 1.5rem; border-radius:30px; font-weight:bold; display:inline-block; margin-top:1rem; transition:background 0.3s; }
+    .whatsapp a:hover { background:#1ebe57; }
+    footer { background:#1e3a5f; color:white; text-align:center; padding:2rem 1rem; margin-top:2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="LOGO_ORIGINAL.jpg" alt="Logotipo Dr. Muñoz" class="logo">
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#galeria">Galería</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="sobre">
+    <div class="hero-text">
+      <h1>Dr. Yaromin Muñoz</h1>
+      <p>Urología de Precisión · Cirugía Robótica y Laparoscopía</p>
+    </div>
+    <img src="foto_perfil.jpg" alt="Foto del Dr. Muñoz">
+  </section>
+
+  <section id="sobre2">
+    <h2>Sobre mí</h2>
+
+    <p>Especialista en Urología de Mínima Invasión. Egresé de la Facultad de Medicina de la <strong>Universidad de Guadalajara</strong>, me especialicé en Urología en el <strong>Hospital General "Dr. Manuel Gea González"</strong>, y completé alta especialidad en Endourología, Laparoscopía y Cirugía Robótica con certificación de <strong>Intuitive Surgical</strong>.</p>
+  </section>
+
+  <section class="procedures" id="tratamientos">
+    <h2>Tratamientos</h2>
+    <ul>
+      <li>Cálculos en las vías urinarias</li>
+      <li>Crecimiento Prostático</li>
+      <li>Infecciones urinarias</li>
+      <li>Vasectomía</li>
+      <li>Circuncisión</li>
+      <li>Dolor Testicular</li>
+      <li>Cáncer de Próstata</li>
+      <li>Cáncer Renal</li>
+      <li>Cáncer de Testículo</li>
+      <li>Cáncer de Vejiga</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="foto1.jpg" alt="Cirugía 1">
+      <img src="foto2.jpg" alt="Cirugía 2">
+      <img src="foto3.jpg" alt="Cirugía 3">
+    </div>
+  </section>
+
+  <section id="formacion">
+    <h2>Formación Académica y Hospitales</h2>
+    <div class="logos">
+      <img src="1508px-Escudo_UdeG.svg.png" alt="UdeG">
+      <img src="Escudo-UNAM-escalable.svg.png" alt="UNAM">
+      <img src="Logo_de_la_Universidad_La_Salle_sin_letras.svg.png" alt="La Salle">
+      <img src="Intuitive_Surgical_logo.svg.png" alt="Intuitive Surgical">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+      <p><strong>Consultorio Guadalajara:</strong> Hospital San Javier, Torre 2, Piso 5, Consultorio 515, Guadalajara, Jalisco</p>
+      <p><strong>Consultorio Arandas:</strong> Calle Martínez Valadez #68 Altos, Centro, Arandas, Jalisco</p>
+      <p><strong>Teléfonos:</strong> 3311962152 / 3487832410</p>
+      <p><strong>Teléfono de urgencias:</strong> 348 105 63 54</p>
+      <p><strong>Email:</strong> drmunozuroprecision@gmail.com</p>
+    </div>
+    <div class="social">
+      <a href="https://instagram.com/drmunozuroprecision" target="_blank"><img src="Instagram_icon.png" alt="Instagram"></a>
+      <a href="https://facebook.com/DrYarominMunozLopez" target="_blank"><img src="Facebook_Logo_(2019).png" alt="Facebook"></a>
+    </div>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=Hospital+San+Javier+Guadalajara&output=embed"></iframe>
+      <iframe src="https://www.google.com/maps?q=Calle+Mart%C3%ADnez+Valadez+%2368+Arandas&output=embed"></iframe>
+    </div>
+    <div class="whatsapp"><a href="https://wa.me/5213481056354" target="_blank">Contactar por WhatsApp</a></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dr. Yaromin Muñoz - Urología de Precisión</p>
+  </footer>
+</body>
+</html>
